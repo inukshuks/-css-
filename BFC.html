@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC</title>
+</head>
+<body>
+ <style>
+     *{
+         margin: 0;
+     }
+     
+     img{
+         float: left;
+     }
+     p::after{
+        content:"hello"; display: block; height: 5px; clear: both;
+
+
+     }
+ </style>
+  <section>
+      <img src="桃桃.jpg" alt="1" style="width: 100px;">
+      <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+      <img src="下载.jpg" alt="2">
+      <p>hahahahhahahhahahahhahahhahahahahhahahahhahahah</p>
+      <img src="可爱.jpg" alt="3">
+  </section>
+</body>
+</html>
